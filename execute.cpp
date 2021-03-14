@@ -12,5 +12,5 @@ void execute(string a)//executing a right command
     else if(comm[0] == "c")//empty circle
     	
     else if(comm[0] == "L")//line
-    	line 
+    	line
 }
