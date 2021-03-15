@@ -38,7 +38,8 @@ int main(int argc, char *argv[])
 
     vector <string> commands;
     commands = read(path);
-
+	vector <vector <char>> vec;
+	field(toInt(split(commands[0]) [2]), toInt(split(commands[0]) [1]), split(commands[0]) [2], vec);
     execute(commands[1]);
 
     return 0;

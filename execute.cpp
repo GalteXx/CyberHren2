@@ -1,6 +1,6 @@
 #include "base.h"
 
-void execute(string a)//executing a right command
+void execute(string a, vector<vector <char>> &arr)//executing a right command
 {
 	vector <string> comm = split(a);
     if(comm[0] == "R")//filled rect
