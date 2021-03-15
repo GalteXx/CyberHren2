@@ -1,5 +1,5 @@
 #include "base.h"
-void e_cir(int x_c, int y_c, char sim_c, vector<vector<char> > &arr,int rad)
+void e_cir(int x_c, int y_c, char sim_c, int rad, vector<vector<char> > &arr)
 {
    int x = 0;
    int y = rad;

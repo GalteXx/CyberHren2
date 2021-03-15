@@ -1,6 +1,6 @@
 #include "base.h"
 
-void line(vector<vector<char> > &arr, int x1, int y1, int x2, int y2, char b_ch2)
+void line(vector<vector<char>> &arr, int x1, int y1, int x2, int y2, char b_ch2)
 {
     int a, b, flag;
     a = y2 - y1;
