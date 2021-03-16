@@ -9,7 +9,7 @@ bool errorCheck(int kol)// checks amount of arguments
     }
     else if (kol == 1)
     {
-        cout << "Error: to few arguments";
+        cout << "Error: to few argumentss";
         return false;
     }
     return true;
@@ -38,9 +38,9 @@ int main(int argc, char *argv[])
 
     vector <string> commands;
     commands = read(path);
-	vector <vector <char>> vec;
-	field(toInt(split(commands[0]) [2]), toInt(split(commands[0]) [1]), split(commands[0]) [2], vec);
-    execute(commands[1]);
+	vector <vector <char> > vec;
+	filed(toInt(split(commands[0]) [2]), toInt(split(commands[0]) [1]), toChar(split(commands[0])[2]), vec);
+    execute(commands[1], vec);
 
     return 0;
 }

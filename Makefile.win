@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = e_cir.o execute.o field.o len.o line.o main.o mod.o read.o split.o e_rec.o rec.o eat.o isNumeric.o
-LINKOBJ  = e_cir.o execute.o field.o len.o line.o main.o mod.o read.o split.o e_rec.o rec.o eat.o isNumeric.o
+OBJ      = e_cir.o execute.o field.o len.o line.o main.o mod.o read.o split.o ToInt.o rec.o toChar.o
+LINKOBJ  = e_cir.o execute.o field.o len.o line.o main.o mod.o read.o split.o ToInt.o rec.o toChar.o
 LIBS     = -L"D:/Installs/Dev-Cpp/MinGW64/lib32" -L"D:/Installs/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static -lbgi -lgdi32 -luser32 -m32
 INCS     = -I"D:/Installs/Dev-Cpp/MinGW64/include" -I"D:/Installs/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Installs/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/Installs/Dev-Cpp/MinGW64/include" -I"D:/Installs/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Installs/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Installs/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -51,14 +51,8 @@ read.o: read.cpp
 split.o: split.cpp
 	$(CPP) -c split.cpp -o split.o $(CXXFLAGS)
 
-e_rec.o: e_rec.cpp
-	$(CPP) -c e_rec.cpp -o e_rec.o $(CXXFLAGS)
+ToInt.o: ToInt.cpp
+	$(CPP) -c ToInt.cpp -o ToInt.o $(CXXFLAGS)
 
 rec.o: rec.cpp
 	$(CPP) -c rec.cpp -o rec.o $(CXXFLAGS)
-
-eat.o: eat.cpp
-	$(CPP) -c eat.cpp -o eat.o $(CXXFLAGS)
-
-isNumeric.o: isNumeric.cpp
-	$(CPP) -c isNumeric.cpp -o isNumeric.o $(CXXFLAGS)

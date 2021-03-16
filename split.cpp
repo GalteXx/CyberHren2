@@ -7,8 +7,10 @@ vector <string> split(string a)
 	for(int i = 0; a[i] != '\0'; i++)
 	{
 		if(a[i] == ' ')
+		{
 			out.push_back(joke);
-			joke = '';
+			joke = "";	
+		}
 		else
 		{
 			joke += a[i];

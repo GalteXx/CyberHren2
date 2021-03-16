@@ -8,5 +8,5 @@ int toInt(string a)
 		out += (a[i] - 48);
 		a[i] *= 10;
 	}
-	return a/10;
+	return out/10;
 }
