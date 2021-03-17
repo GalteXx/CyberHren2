@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
         SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
     }
     string lish = argv[2];
-    if (lish == (char *) "save")
+    if (lish == (char *) "--save")
     {
         write(vec);
     }
