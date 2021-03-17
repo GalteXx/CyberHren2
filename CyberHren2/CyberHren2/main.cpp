@@ -50,7 +50,10 @@ bool errorCheck3(string a)
     }
     if (joke != "operation.it")
     {
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
         cout << "Incorrect file name (only \"operation.it\" is accepted)";
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
         return false;
     }
     return true;
