@@ -142,6 +142,7 @@
     <ClInclude Include="base.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cir.cpp" />
     <ClCompile Include="execute.cpp" />
     <ClCompile Include="e_cir.cpp" />
     <ClCompile Include="e_rec.cpp" />

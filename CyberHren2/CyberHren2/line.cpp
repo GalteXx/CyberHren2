@@ -2,6 +2,11 @@
 
 void line(vector<vector<char> > &arr, int x1, int y1, int x2, int y2, char b_ch2)
 {
+    if (x1 == y1 && x2 == y2 &&  x1 == y2)
+    {
+        arr[x1][y1] = b_ch2;
+        return;
+    }
     int a, b, flag;
     a = y2 - y1;
     b = x1 - x2;

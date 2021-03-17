@@ -9,6 +9,7 @@ using namespace  std;
 
 void filed(int w, int h, char backk, vector <vector <char> > &arr); // canvas
 void execute(string command, vector<vector <char> > &arr);//executes right command
+void  cir(int x_c, int y_c, char sim_c, vector<vector<char> >& arr, int rad);//filled circle
 void e_cir(int x_c, int y_c, char sim_c, int rad, vector<vector<char> > &arr);// ?empty? circle
 int len(string str);//length of a string
 int mod(int a); //abs
