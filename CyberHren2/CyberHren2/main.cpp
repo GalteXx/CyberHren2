@@ -37,11 +37,10 @@ int main(int argc, char *argv[])
     
     vector <string> commands;
     commands = read(path);
-    /*
+    
 	vector <vector <char> > vec;
 	filed(toInt(split(commands[0]) [0]), toInt(split(commands[0]) [1]), toChar(split(commands[0])[2]), vec);
     execute(commands[1], vec);
-    */
-    cout << split(commands[0])[0];
+    
     return 0;
 }

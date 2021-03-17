@@ -4,7 +4,7 @@ vector <string> split(string a)
 {
 	vector <string> out;
 	string joke;
-	for(int i = 0; a[i] != '\0'|| a[i] != '\n'; i++)
+	for(int i = 0; /*a[i] != '\0'|| a[i] != '\n'*/  i < len(a); i++)
 	{
 		if(a[i] == ' ')
 		{
@@ -16,5 +16,6 @@ vector <string> split(string a)
 			joke += a[i];
 		}
 	}
+	out.push_back(joke);
 	return out;
 }
