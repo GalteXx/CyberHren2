@@ -25,5 +25,6 @@ void line(vector<vector<char> > &arr, int x1, int y1, int x2, int y2, char b_ch2
 char toChar(string a);//1 string typed letter to char... why?
 void vout(vector <vector <char> > &arr);//outputs the vector
 bool isNumerr(string a);//to string -> int safely
+void write(vector <vector <char> >& arr);//saves in a file
 
 #endif

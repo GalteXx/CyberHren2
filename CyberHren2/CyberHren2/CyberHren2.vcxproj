@@ -159,6 +159,7 @@
     <ClCompile Include="split.cpp" />
     <ClCompile Include="toChar.cpp" />
     <ClCompile Include="ToInt.cpp" />
+    <ClCompile Include="write.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="operation.it" />
