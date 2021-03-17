@@ -87,10 +87,12 @@ int main(int argc, char *argv[])
         cout << "Canvas size should be a integer";
         SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
     }
-    string lish = argv[2];
-    if (lish == (char *) "--save")
-    {
-        write(vec);
+    if (argc == 3) {
+        string lish = argv[2];
+        if (lish == (char*)"--save")
+        {
+            write(vec);
+        }
     }
     return 0;
 }

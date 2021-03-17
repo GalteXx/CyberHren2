@@ -15,6 +15,8 @@ vector <string> read(char *path)
         SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
         exit(0);
     }
+    wrkspc.close();
+    wrkspc.open(path);
     if(wrkspc.is_open())
     {
         while(std::getline(wrkspc, line))
