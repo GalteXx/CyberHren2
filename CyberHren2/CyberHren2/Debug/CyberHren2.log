@@ -1,23 +1,2 @@
-﻿  cir.cpp
-C:\Users\georg\Documents\GitHub\CyberHren2\CyberHren2\CyberHren2\cir.cpp(8,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\georg\Documents\GitHub\CyberHren2\CyberHren2\CyberHren2\cir.cpp(9,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\georg\Documents\GitHub\CyberHren2\CyberHren2\CyberHren2\cir.cpp(11,31): warning C4018: '<': signed/unsigned mismatch
-  execute.cpp
-  e_cir.cpp
-  e_rec.cpp
-  field.cpp
-  isNumeric.cpp
-  len.cpp
-  line.cpp
-  main.cpp
-  mod.cpp
-  read.cpp
-  rec.cpp
-  vout.cpp
-C:\Users\georg\Documents\GitHub\CyberHren2\CyberHren2\CyberHren2\vout.cpp(5,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\georg\Documents\GitHub\CyberHren2\CyberHren2\CyberHren2\vout.cpp(7,21): warning C4018: '<': signed/unsigned mismatch
-  split.cpp
-  toChar.cpp
-  ToInt.cpp
-  Generating Code...
+﻿  main.cpp
   CyberHren2.vcxproj -> C:\Users\georg\Documents\GitHub\CyberHren2\CyberHren2\Debug\CyberHren2.exe

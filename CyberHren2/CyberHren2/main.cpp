@@ -4,12 +4,18 @@ bool errorCheck(int kol)// checks amount of arguments
 {
     if(kol > 2)
     {
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
         cout << "Error: to many arguments";
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
         return false;
     }
     else if (kol == 1)
     {
-        cout << "Error: to few argumentss";
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
+        cout << "Error: to few arguments";
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
         return false;
     }
     return true;
@@ -19,7 +25,10 @@ bool errorCheck2(string path)//check for .it
 {
         if((path[len(path) - 3] != '.') || (path[len(path) - 2] != 'i') || (path[len(path)-1] != 't'))
         {
+            HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+            SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
             cout << "Error: Operation file has an incorrect extension";
+            SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
             return false;
         }
         return true;

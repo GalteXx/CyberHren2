@@ -5,6 +5,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <stdio.h>
+#include <Windows.h>
 using namespace  std;
 
 void filed(int w, int h, char backk, vector <vector <char> > &arr); // canvas
