@@ -2,7 +2,7 @@
 
 bool errorCheck(int kol)// checks amount of arguments
 {
-    if(kol > 2)
+    if(kol > 3)
     {
         HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
         SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
@@ -75,7 +75,17 @@ int main(int argc, char *argv[])
     commands = read(path);
     
 	vector <vector <char> > vec;
-	filed(toInt(split(commands[0]) [0]), toInt(split(commands[0]) [1]), toChar(split(commands[0])[2]), vec);
-    execute(commands[1], vec);
+    if (isNumerr(split(commands[0])[0]) && isNumerr(split(commands[0])[1]))
+    {
+        filed(toInt(split(commands[0])[0]), toInt(split(commands[0])[1]), toChar(split(commands[0])[2]), vec);
+        execute(commands[1], vec);
+    }
+    else
+    {
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
+        cout << "Canvas size should be a integer";
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
+    }
     return 0;
 }

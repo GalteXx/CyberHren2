@@ -154,6 +154,7 @@
     <ClCompile Include="mod.cpp" />
     <ClCompile Include="read.cpp" />
     <ClCompile Include="rec.cpp" />
+    <ClCompile Include="isNumerr.cpp" />
     <ClCompile Include="vout.cpp" />
     <ClCompile Include="split.cpp" />
     <ClCompile Include="toChar.cpp" />

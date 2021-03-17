@@ -21,6 +21,7 @@ vector <string> read(char *path)
         SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
         cout << "Error: can't open file";
         SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
+        exit(0);
     }
     
     return out;
