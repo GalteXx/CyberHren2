@@ -20,5 +20,6 @@ int toInt(string a);//converts to srting
 bool isNumeric(char a);//checks if a char is NUM, basically useless as for now
 void line(vector<vector<char> > &arr, int x1, int y1, int x2, int y2, char b_ch2);//draws a line (WCHT)
 char toChar(string a);//1 string typed letter to char... why?
+void vout(vector <vector <char> > &arr);//outputs the vector
 
 #endif

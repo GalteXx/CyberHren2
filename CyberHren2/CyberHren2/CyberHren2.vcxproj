@@ -153,6 +153,7 @@
     <ClCompile Include="mod.cpp" />
     <ClCompile Include="read.cpp" />
     <ClCompile Include="rec.cpp" />
+    <ClCompile Include="vout.cpp" />
     <ClCompile Include="split.cpp" />
     <ClCompile Include="toChar.cpp" />
     <ClCompile Include="ToInt.cpp" />

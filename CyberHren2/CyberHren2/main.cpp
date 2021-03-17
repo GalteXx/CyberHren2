@@ -41,6 +41,6 @@ int main(int argc, char *argv[])
 	vector <vector <char> > vec;
 	filed(toInt(split(commands[0]) [0]), toInt(split(commands[0]) [1]), toChar(split(commands[0])[2]), vec);
     execute(commands[1], vec);
-    
+    vout(vec);
     return 0;
 }
