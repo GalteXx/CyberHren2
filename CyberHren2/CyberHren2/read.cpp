@@ -15,7 +15,14 @@ vector <string> read(char *path)
         
         wrkspc.close();
     }
-    else cout << "Error: can't open file";
+    else
+    {
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
+        cout << "Error: can't open file";
+        SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 15));
+    }
+    
     return out;
 
 }

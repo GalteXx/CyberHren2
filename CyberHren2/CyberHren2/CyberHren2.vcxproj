@@ -160,7 +160,7 @@
     <ClCompile Include="ToInt.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="eh.it" />
+    <None Include="operation.it" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

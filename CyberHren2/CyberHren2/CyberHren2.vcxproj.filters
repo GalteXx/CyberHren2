@@ -70,7 +70,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="eh.it" />
     <None Include="README.md" />
+    <None Include="operation.it" />
   </ItemGroup>
 </Project>

@@ -39,7 +39,7 @@ bool errorCheck3(string a)
     string joke;
     for (int i = 0; i < len(a); i++)
     {
-        if (a[i] == ' ')
+        if (a[i] == '\\')
         {
             joke = "";
         }
