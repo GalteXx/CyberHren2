@@ -34,6 +34,28 @@ bool errorCheck2(string path)//check for .it
         return true;
 }
 
+bool errorCheck3(string a)
+{
+    string joke;
+    for (int i = 0; i < len(a); i++)
+    {
+        if (a[i] == ' ')
+        {
+            joke = "";
+        }
+        else
+        {
+            joke += a[i];
+        }
+    }
+    if (joke != "operation.it")
+    {
+        cout << "Incorrect file name (only \"operation.it\" is accepted)";
+        return false;
+    }
+    return true;
+}
+
 int main(int argc, char *argv[])
 {
     if(!errorCheck(argc))
@@ -43,6 +65,8 @@ int main(int argc, char *argv[])
     if(!errorCheck2(path))
         return 0;
 
+    if (!errorCheck3(path))
+        return 0;
     
     vector <string> commands;
     commands = read(path);
